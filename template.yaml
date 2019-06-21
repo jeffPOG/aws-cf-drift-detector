@@ -1,0 +1,41 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Simpe stack to monitor drifts off a cloudformation stacks
+
+Globals:
+  Function:
+    Runtime: python3.6
+    Timeout: 300
+    MemorySize: 256
+
+Resources:
+
+  SnsTopic:
+    Type: 'AWS::SNS::Topic'
+
+  LookForDriftsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src
+      Handler: lookForDrifts.lambda_handler
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - cloudformation:DescribeStacks
+                - cloudformation:DetectStackDrift
+                - cloudformation:DescribeStackDriftDetectionStatus
+                - cloudformation:ListStackResources
+                - cloudformation:DescribeStackResourceDrifts
+              Resource:
+                - "*"
+      Environment:
+        Variables:
+          SNS_TOPIC: !Ref SnsTopic
+      Events:
+        Timer:
+          Type: Schedule
+          Properties:
+            Schedule: cron(*/10 * * * *)  # every 10 minutes
+
