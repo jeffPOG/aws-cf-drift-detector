@@ -14,4 +14,5 @@ sam package \
 sam deploy \
    --template-file generated-template.yaml \
    --stack-name DRIFT-DETECTOR-SERVICE \
-   --capabilities CAPABILITY_IAM
+   --capabilities CAPABILITY_IAM \
+   --parameter-overrides AdminMail=lukpep@gmail.com

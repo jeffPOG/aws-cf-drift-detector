@@ -2,6 +2,11 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Simpe stack to monitor drifts off a cloudformation stacks
 
+Parameters:
+  AdminMail:
+    Type: String
+    Description: administraion mail where all drift notification should be send. Confirmation will be needed
+
 Globals:
   Function:
     Runtime: python3.6
@@ -13,12 +18,22 @@ Resources:
   SnsTopic:
     Type: 'AWS::SNS::Topic'
 
+  AdminSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Endpoint: !Ref AdminMail
+      Protocol: email
+      TopicArn: !Ref SnsTopic
+
   LookForDriftsFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: src
       Handler: lookForDrifts.lambda_handler
       Policies:
+        - ReadOnlyAccess
+        - SNSPublishMessagePolicy:
+            TopicName: !GetAtt SnsTopic.TopicName
         - Version: '2012-10-17'
           Statement:
             - Effect: Allow
@@ -28,6 +43,7 @@ Resources:
                 - cloudformation:DescribeStackDriftDetectionStatus
                 - cloudformation:ListStackResources
                 - cloudformation:DescribeStackResourceDrifts
+                - cloudformation:DetectStackResourceDrift
               Resource:
                 - "*"
       Environment:
