@@ -53,5 +53,5 @@ Resources:
         Timer:
           Type: Schedule
           Properties:
-            Schedule: cron(0/10 * * * ? *)  # every 10 minutes
+            Schedule: cron(0 12 * * ? *)  # every day - 12 UTC
 
