@@ -3,7 +3,6 @@
 CODE_BUCKET_NAME="common-microservices-code"
 ADMIN_MAIL="lukpep@gmail.com"
 
-# validate template
 sam validate
 
 # check if s3 bucket exists
@@ -13,9 +12,7 @@ then
     aws s3 mb s3://${CODE_BUCKET_NAME}
 fi
 
-
 # package and upload to S3
-# IMPORTANT! common-microservices-code bucket must be present on AWS S3
 sam package \
    --template-file template.yaml \
    --output-template-file generated-template.yaml \
