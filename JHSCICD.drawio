@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T12:02:02.916Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="jD7S-aRgP82b4n9d9f0T" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-16T12:03:01.062Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="w8EqcVnvmkTbxuN57V2i" version="21.6.8" type="github">
   <diagram name="Page-1" id="kofEtEwuHFttVS7a7wvx">
     <mxGraphModel dx="2044" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="LwD_bo4SeNRyqzH8LdQW-9" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="LwD_bo4SeNRyqzH8LdQW-1">
           <mxGeometry x="150" y="260" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="LwD_bo4SeNRyqzH8LdQW-17" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;AWS Fargate&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="LwD_bo4SeNRyqzH8LdQW-1">
+        <mxCell id="LwD_bo4SeNRyqzH8LdQW-17" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;AWS Fargate&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;glass=0;shadow=1;" vertex="1" parent="LwD_bo4SeNRyqzH8LdQW-1">
           <mxGeometry x="214" y="190" width="100" height="160" as="geometry" />
         </mxCell>
         <mxCell id="LwD_bo4SeNRyqzH8LdQW-11" value="Ci-Coordinator" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_2;" vertex="1" parent="LwD_bo4SeNRyqzH8LdQW-1">
