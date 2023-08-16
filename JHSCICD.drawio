@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T11:23:25.819Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="CjNLVUMdUf5ZzZ6roEQs" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-16T11:31:17.597Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="MqgL3efbWshIGSeI-g9M" version="21.6.8" type="github">
   <diagram name="Page-1" id="kofEtEwuHFttVS7a7wvx">
     <mxGraphModel dx="2044" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -90,6 +90,9 @@
         </mxCell>
         <mxCell id="LwD_bo4SeNRyqzH8LdQW-6" value="Workstation" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.workstation_client" vertex="1" parent="1">
           <mxGeometry x="120" y="352.5" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="LwD_bo4SeNRyqzH8LdQW-38" value="Low Side Deployment" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_corporate_data_center;strokeColor=#5A6C86;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#5A6C86;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="30" width="560" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
